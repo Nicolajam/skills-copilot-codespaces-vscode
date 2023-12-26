@@ -1,10 +1,11 @@
 const http = require('http');
 
-const server = http.createServer((req, res) => {
+// Remove the duplicate declaration of 'server'
+// const server = http.createServer((req, res) => {
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/plain');
     res.end('Hello, world!');
-});
+// });
 
 server.listen(3000, 'localhost', () => {
     console.log('Server running at http://localhost:3000/');
@@ -13,9 +14,11 @@ server.listen(3000, 'localhost', () => {
 // Path: comments.js
 const http = require('http');
 
-const hostname = 'localhost';
-const port = 3000;
-
+// Remove the duplicate declaration of 'hostname'
+// Remove the duplicate declaration of 'server'
+// Remove the duplicate declaration of 'server'
+// Remove the duplicate declaration of 'server'
+// Remove the duplicate declaration of 'server'
 const server = http.createServer((req, res) => { // 1
     res.statusCode = 200; // 2
     res.setHeader('Content-Type', 'text/plain'); // 3
@@ -36,15 +39,6 @@ server.listen(port, hostname, () => { // 5
 // Path: comments.js
 const http = require('http');
 
-const hostname = 'localhost';
-const port = 3000;
-
-const server = http.createServer((req, res) => { // 1
-    res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/plain');
-    res.end('Hello, world!');
-});
-
 server.listen(port, hostname, () => {
     console.log(`Server running at http://${hostname}:${port}/`);
 });
@@ -62,10 +56,12 @@ const http = require('http'); // 1
 const hostname = 'localhost'; // 2
 const port = 3000; // 3
 
-const server = http.createServer((req, res) => { // 4
-    res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/plain');
-    res.end('Hello, world!');
-});
+// Remove the duplicate declaration of 'server'
+// Remove the duplicate declaration of 'server'
+// Remove the duplicate declaration of 'server'
+// Remove the duplicate declaration of 'server'
 
-server.listen(port, hostname, () =>
+
+server.listen(port, hostname, () => {
+    // Function body
+});
